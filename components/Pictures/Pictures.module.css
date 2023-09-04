@@ -1,0 +1,21 @@
+.pictures {
+  display: flex;
+  max-width: 1000px;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.pictures__img {
+  max-width: 250px;
+  margin: 5px;
+}
+
+@media (max-width: 700px) {
+  .pictures {
+    flex-direction: column;
+  }
+
+  .pictures__img {
+    margin: 0 auto;
+  }
+}
