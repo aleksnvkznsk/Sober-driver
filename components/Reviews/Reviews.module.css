@@ -1,0 +1,24 @@
+.reviews {
+}
+
+.swiper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.slide {
+  max-width: 400px;
+  margin: 10px;
+}
+
+.slide__name {
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+}
+
+.slide__reviews {
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+}
