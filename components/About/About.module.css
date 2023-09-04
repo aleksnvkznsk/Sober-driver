@@ -1,0 +1,11 @@
+.about {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about__text {
+    text-indent: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
