@@ -1,0 +1,39 @@
+.header {
+  background: rgba(0, 0, 0);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+}
+
+.phone{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+@media(max-width: 1000px){
+    .header{
+        display: none;
+    }
+  }
