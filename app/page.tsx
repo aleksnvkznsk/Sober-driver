@@ -2,6 +2,7 @@ import About from "@/components/About/About";
 import Intro from "@/components/Intro/Intro";
 import Pictures from "@/components/Pictures/Pictures";
 import Reviews from "@/components/Reviews/Reviews";
+import ServiceOrder from "@/components/ServiceOrder/ServiceOrder";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Intro />
       <About />
       <Pictures />
+      <ServiceOrder />
       <Reviews />
     </>
   );
