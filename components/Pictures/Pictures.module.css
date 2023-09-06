@@ -2,20 +2,35 @@
   display: flex;
   max-width: 1000px;
   flex-direction: row;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 
 .pictures__img {
-  max-width: 250px;
+  width: 230px;
   margin: 5px;
 }
 
+@media (max-width: 1000px) {
+
+
+  .pictures__img {
+    margin: 5px auto;
+    width: 200px;
+  }
+}
+
 @media (max-width: 700px) {
+  .pictures__img {
+    margin: 5px auto;
+    width: 400px;
+  }
   .pictures {
     flex-direction: column;
   }
+}
 
+@media (max-width: 450px) {
   .pictures__img {
-    margin: 0 auto;
+    width: 280px;
   }
 }

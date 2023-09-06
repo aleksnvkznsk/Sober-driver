@@ -12,6 +12,11 @@
 .intro__container {
     display: flex;
     flex-direction: column;
+    background-color: rgb(28, 28, 28, 0.5);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .intro__header {
@@ -22,15 +27,26 @@
 
 .intro__links {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0 auto;
 }
 
 .introLinksHref {
     text-decoration: none;
-    font-weight: 200;
+    font-weight: 400;
     color: white;
-    font-size: 18px;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.introLinksHref:hover{
+    color: greenyellow;
+}
+
+.introLinksPhone{
+    font-weight: 400;
+    color: white;
+    font-size: 24px;
     margin: 10px;
 }
 

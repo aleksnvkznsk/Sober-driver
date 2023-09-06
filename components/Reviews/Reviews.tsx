@@ -10,7 +10,7 @@ export default function Reviews() {
     <div className={style.reviews}>
       <Swiper
         className={style.swiper}
-        slidesPerView={3}
+        slidesPerView='auto'
         pagination
       >
         <SwiperSlide className={style.slide}>
