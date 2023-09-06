@@ -5,7 +5,7 @@ export default function ServiceOrder() {
     <div className={style.order}>
       <div className={style.order__container}>
         <p className={style.order__container__header}>
-          Как заказать услугу "трезвый водитель"?
+          Как заказать услугу Трезвый водитель?
         </p>
         <div className={style.order__container__info}>
             <div className={style.order__container__intro__paragraph}>
