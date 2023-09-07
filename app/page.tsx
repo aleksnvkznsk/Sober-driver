@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import Intro from "@/components/Intro/Intro";
 import Pictures from "@/components/Pictures/Pictures";
@@ -14,6 +15,7 @@ export default function Home() {
       <ServiceOrder />
       <Reviews />
       <Contacts />
+      <Footer />
     </>
   );
 }
