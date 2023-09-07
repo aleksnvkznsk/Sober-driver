@@ -1,4 +1,3 @@
-import About from "@/components/About/About";
 import Header from "@/components/Header/Header";
 import Intro from "@/components/Intro/Intro";
 import Pictures from "@/components/Pictures/Pictures";
@@ -10,7 +9,6 @@ export default function Home() {
     <>
       <Header />
       <Intro />
-      <About />
       <Pictures />
       <ServiceOrder />
       <Reviews />

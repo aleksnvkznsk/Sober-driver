@@ -1,5 +1,13 @@
 .reviews {
   padding: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.reviews__header{
+font-size: 24px;
+font-weight: 700;
+color: black;
 }
 
 .swiper {

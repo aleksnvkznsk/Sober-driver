@@ -8,6 +8,7 @@ import "swiper/css";
 export default function Reviews() {
   return (
     <div className={style.reviews}>
+      <h1 className={style.reviews__header}>Отзывы</h1>
       <Swiper
         className={style.swiper}
         slidesPerView='auto'
