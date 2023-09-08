@@ -7,7 +7,7 @@ export default function Intro() {
     <div className={style.intro}>
       <div className={style.intro__container}>
         <div className={style.intro__container__block}>
-          <p className={style.intro__header}>Трезвый Водитель 24/7</p>
+          <p className={style.intro__header}>Трезвый Водитель 24/7 Новокузнецк</p>
           <div className={style.intro__links}>
             <a
               href="https://t.me/vladimirovich0004"

@@ -1,9 +1,10 @@
 "use client"
-
+import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from "swiper/react";
 import style from './Reviews.module.css';
 
 import "swiper/css";
+import 'swiper/css/pagination';
 
 export default function Reviews() {
   return (
@@ -11,8 +12,9 @@ export default function Reviews() {
       <h1 className={style.reviews__header}>Отзывы</h1>
       <Swiper
         className={style.swiper}
+        modules={[Pagination]}
         slidesPerView='auto'
-        pagination
+        pagination={{ clickable: true }}
       >
         <SwiperSlide className={style.slide}>
           <p className={style.slide__name}>Денис</p>

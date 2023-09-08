@@ -13,13 +13,29 @@
 .contacts__container {
   display: flex;
   margin: 0 auto;
-  max-width: 400px;
-  flex-direction: column;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.contacts__container__info{
+  padding: 20px;
+}
+
+.contacts__img{
+  width: 400px;
+  border-radius: 2px;
 }
 
 .contacts__text {
   font-size: 24px;
   font-weight: 500;
+}
+
+@media(max-width: 800px){
+    .contacts__img{
+      display: none;
+    }
 }
 
 @media(max-width: 500px){

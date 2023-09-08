@@ -31,3 +31,13 @@
   font-weight: 400;
   color: black;
 }
+
+.swiper :global .swiper-pagination {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .swiper :global .swiper-pagination {
+    display: block;
+  }
+}
