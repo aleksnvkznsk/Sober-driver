@@ -16,7 +16,7 @@ export default function Intro() {
             >
               Telegram / vladimirovich0004
             </a>
-            <p className={style.introLinksPhone}>+7 999 648 00 04</p>
+            <a href="tel:+79996480004" className={style.introLinksPhone}>+7 999 648 00 04</a>
           </div>
         </div>
 

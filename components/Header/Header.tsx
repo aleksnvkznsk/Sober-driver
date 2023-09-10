@@ -6,9 +6,9 @@ export default function Header() {
       <div className={style.header__container}>
         <div className={style.header__inner}>
           <p className={style.header__logo}>Трезвый Водитель 24/7</p>
-          <p className={style.phone}>
+          <a href="tel:+79996480004" className={style.phone}>
             +7 999 648 00 04
-          </p>
+          </a>
         </div>
       </div>
     </header>

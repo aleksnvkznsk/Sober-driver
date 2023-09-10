@@ -51,7 +51,7 @@
 }
 
 .introLinksHref:hover {
-  color: greenyellow;
+  color: rgb(9, 120, 255);
 }
 
 .introLinksPhone {
@@ -59,6 +59,11 @@
   color: white;
   font-size: 24px;
   margin: 10px;
+  text-decoration: none;
+}
+
+.introLinksPhone:hover {
+  color: rgb(9, 120, 255);
 }
 
 @media (max-width: 1000px) {

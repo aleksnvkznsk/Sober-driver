@@ -30,6 +30,11 @@
     color: white;
     font-size: 30px;
     font-weight: 600;
+    text-decoration: none;
+}
+
+.phone:hover{
+  color: rgb(9, 120, 255);
 }
 
 @media(max-width: 1000px){
