@@ -9,82 +9,82 @@
 
 .intro__container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 0 auto;
   max-width: 1000px;
-}
-
-.intro__container__block {
-  max-width: 500px;
-  background-color: rgb(24, 24, 24);
-  border-radius: 10px;
-}
-
-.intro__container__about {
-  max-width: 500px;
   padding: 20px;
 }
 
-.about__text {
-  font-size: 20px;
-  font-weight: 400;
-  text-align: left;
-  text-indent: 30px;
-}
-
-.intro__header {
-  color: white;
+.intro__h1 {
+  color: black;
   font-size: 50px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.intro__p {
+  color: black;
+  font-size: 30px;
   font-weight: 400;
+  margin: 0;
+  margin-top: 20px;
 }
 
-.intro__links {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
+.intro__container__button {
+  margin-top: 30px;
 }
 
-.introLinksHref {
+.intro__button {
+  background-color: black;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+}
+
+.intro__link {
   text-decoration: none;
-  font-weight: 400;
   color: white;
   font-size: 24px;
-  margin: 10px;
-}
-
-.introLinksHref:hover {
-  color: rgb(9, 120, 255);
-}
-
-.introLinksPhone {
   font-weight: 400;
-  color: white;
-  font-size: 24px;
-  margin: 10px;
-  text-decoration: none;
 }
 
-.introLinksPhone:hover {
-  color: rgb(9, 120, 255);
+.telegram:hover {
+  background-color: rgb(9, 120, 255);
 }
 
-@media (max-width: 1000px) {
-  .intro__container {
-    flex-direction: column;
-    padding: 10px;
-  }
+.number:hover {
+  background-color: rgb(0, 195, 23);
 }
 @media (max-width: 500px) {
-  .intro__header {
-    font-size: 22px;
+  .intro__h1 {
+    font-size: 40px;
   }
-  .introLinksHref {
-    font-size: 16px;
+
+  .intro__p {
+    font-size: 20px;
   }
-  .introLinksPhone {
-    font-size: 16px;
+
+  .intro__button {
+    padding: 20px;
+    margin: 10px;
+    width: 150px;
   }
-  .about__text {
+  
+  .intro__link {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px){
+  .intro__button {
+    padding: 15px;
+    margin: 7px;
+    width: 120px;
+  }
+  
+  .intro__link {
     font-size: 16px;
   }
 }

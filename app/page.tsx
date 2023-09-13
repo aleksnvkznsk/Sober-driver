@@ -1,3 +1,4 @@
+import About from "@/components/About/About";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import Intro from "@/components/Intro/Intro";
@@ -12,6 +13,7 @@ export default function Home() {
     <>
       <Header />
       <Intro />
+      <About />
       <Pictures />
       <ServiceOrder />
       <Price />
