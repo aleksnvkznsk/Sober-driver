@@ -1,31 +1,106 @@
+"use client";
 import style from "./ServiceOrder.module.css";
+import { motion } from "framer-motion";
+
+const AnimationHeader = {
+  hidden: {
+    y: -30,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { delay: 0.2 },
+  },
+};
+
+const Animation1 = {
+  hidden: {
+    y: -30,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { delay: 0.4 },
+  },
+};
+
+const Animation2 = {
+  hidden: {
+    y: -30,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { delay: 0.5 },
+  },
+};
+
+const Animation3 = {
+  hidden: {
+  y: -30,
+    opacity: 0,
+  },
+  visible: {
+  y: 0,
+    opacity: 1,
+    transition: { delay: 0.6 },
+  },
+};
+
+const Animation4 = {
+  hidden: {
+  y: -30,
+    opacity: 0,
+  },
+  visible: {
+  y: 0,
+    opacity: 1,
+    transition: { delay: 0.7 },
+  },
+};
 
 export default function ServiceOrder() {
   return (
-    <div className={style.order}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.1 }}
+      className={style.order}
+    >
       <div className={style.order__container}>
-        <p className={style.order__container__header}>
+        <motion.p  variants={AnimationHeader} className={style.order__container__header}>
           Как заказать услугу Трезвый водитель?
-        </p>
+        </motion.p>
         <div className={style.order__container__info}>
-            <div className={style.order__container__intro__paragraph}>
-                <h1 className={style.order__container__intro__paragraph__h1}>1</h1>
-                <p className={style.order__container__intro__paragraph__p}>Звоните или пишите нам</p>
-            </div>
-            <div className={style.order__container__intro__paragraph}>
-                <h1 className={style.order__container__intro__paragraph__h1}>2</h1>
-                <p className={style.order__container__intro__paragraph__p}>Обсуждаем поездку и стоимость</p>
-            </div>
-            <div className={style.order__container__intro__paragraph}>
-                <h1 className={style.order__container__intro__paragraph__h1}>3</h1>
-                <p className={style.order__container__intro__paragraph__p}>Трезвый водитель приезжает в нужное место</p>
-            </div>
-            <div className={style.order__container__intro__paragraph}>
-                <h1 className={style.order__container__intro__paragraph__h1}>4</h1>
-                <p className={style.order__container__intro__paragraph__p}>Трезвый водитель доставляет вас на вашем автомобиле</p>
-            </div>
+          <motion.div variants={Animation1} className={style.order__container__intro__paragraph}>
+            <h1 className={style.order__container__intro__paragraph__h1}>1</h1>
+            <p className={style.order__container__intro__paragraph__p}>
+              Звоните или пишите нам
+            </p>
+          </motion.div>
+          <motion.div variants={Animation2} className={style.order__container__intro__paragraph}>
+            <h1 className={style.order__container__intro__paragraph__h1}>2</h1>
+            <p className={style.order__container__intro__paragraph__p}>
+              Обсуждаем поездку и стоимость
+            </p>
+          </motion.div>
+          <motion.div variants={Animation3} className={style.order__container__intro__paragraph}>
+            <h1 className={style.order__container__intro__paragraph__h1}>3</h1>
+            <p className={style.order__container__intro__paragraph__p}>
+              Трезвый водитель приезжает в нужное место
+            </p>
+          </motion.div>
+          <motion.div variants={Animation4} className={style.order__container__intro__paragraph}>
+            <h1 className={style.order__container__intro__paragraph__h1}>4</h1>
+            <p className={style.order__container__intro__paragraph__p}>
+              Трезвый водитель доставляет вас на вашем автомобиле
+            </p>
+          </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

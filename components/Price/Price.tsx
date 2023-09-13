@@ -1,12 +1,32 @@
+"use client";
 import style from "./Price.module.css";
+import { motion } from "framer-motion";
+
+const AnimationText = {
+  hidden: {
+    y: 10,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { delay: 0.2 },
+  },
+};
 
 export default function Price() {
   return (
-    <div className={style.price}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.4 }}
+      variants={AnimationText}
+      className={style.price}
+    >
       <h1 className={style.price__header}>Стоимость услуги</h1>
       <div className={style.price__container}>
         <p className={style.price__container__text}>
-          От <b> 999₽ </b> по цетральному району, остальные заказы  оговариваются
+          От <b> 999₽ </b> по цетральному району, остальные заказы оговариваются
           отдельно
         </p>
         <p className={style.price__container__text}>
@@ -17,6 +37,6 @@ export default function Price() {
           нами
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }

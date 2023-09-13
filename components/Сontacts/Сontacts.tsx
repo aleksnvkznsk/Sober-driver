@@ -1,8 +1,28 @@
+"use client";
 import style from "./Сontacts.module.css";
+import { motion } from "framer-motion";
+
+const AnimationText = {
+  hidden: {
+    y: 10,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { delay: 0.2 },
+  },
+};
 
 export default function Сontacts() {
   return (
-    <div className={style.contacts}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.5 }}
+      variants={AnimationText}
+      className={style.contacts}
+    >
       <h1 className={style.contacts__header}>Контакты</h1>
       <div className={style.contacts__container}>
         <div className={style.contacts__container__info}>
@@ -23,6 +43,6 @@ export default function Сontacts() {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
