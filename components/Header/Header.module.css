@@ -26,19 +26,33 @@
   color: white;
 }
 
-.phone{
-    color: white;
-    font-size: 30px;
-    font-weight: 600;
-    text-decoration: none;
+.phone {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
 }
 
-.phone:hover{
+.phone:hover {
   color: rgb(9, 120, 255);
 }
 
-@media(max-width: 1000px){
-    .header{
-        display: none;
-    }
+@media (max-width: 1000px) {
+  .header__inner {
+    flex-direction: column;
+    text-align: center;
+    padding: 8px;
   }
+
+  .header__logo {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 5px;
+  }
+  
+  .phone{
+      font-size: 14px;
+      font-weight: 600;
+      margin: 5px;
+  }
+}
