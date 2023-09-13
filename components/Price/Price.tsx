@@ -10,7 +10,7 @@ const AnimationText = {
   visible: {
     y: 0,
     opacity: 1,
-    transition: { delay: 0.2 },
+    transition: { delay: 0.1 },
   },
 };
 
@@ -19,7 +19,7 @@ export default function Price() {
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 0.4 }}
+      viewport={{ amount: 0.1 }}
       variants={AnimationText}
       className={style.price}
     >

@@ -11,7 +11,7 @@ const AnimationText = {
   visible: {
       y: 0,
       opacity: 1,
-      transition: { delay: 0.2 },
+      transition: { delay: 0.1 },
   }
 }
 

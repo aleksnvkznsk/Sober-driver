@@ -67,7 +67,7 @@ export default function ServiceOrder() {
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 0.1 }}
+      viewport={{ amount: 0.3 }}
       className={style.order}
     >
       <div className={style.order__container}>

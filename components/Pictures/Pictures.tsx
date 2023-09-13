@@ -11,7 +11,7 @@ const AnimationImg1 = {
   visible: {
     y: 0,
     opacity: 1,
-    transition: { delay: 0.2 },
+    transition: { delay: 0.1 },
   },
 };
 const AnimationImg2 = {
@@ -22,7 +22,7 @@ const AnimationImg2 = {
   visible: {
     y: 0,
     opacity: 1,
-    transition: { delay: 0.3 },
+    transition: { delay: 0.15 },
   },
 };
 const AnimationImg3 = {
@@ -33,7 +33,7 @@ const AnimationImg3 = {
   visible: {
     y: 0,
     opacity: 1,
-    transition: { delay: 0.4 },
+    transition: { delay: 0.2 },
   },
 };
 const AnimationImg4 = {
@@ -44,7 +44,7 @@ const AnimationImg4 = {
   visible: {
     y: 0,
     opacity: 1,
-    transition: { delay: 0.5 },
+    transition: { delay: 0.25 },
   },
 };
 
