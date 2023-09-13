@@ -34,7 +34,7 @@
 }
 
 .footer__inner__links:hover {
-    color: greenyellow;
+    color: rgb(9, 120, 255);
 }
 
 @media (max-width: 600px) {
