@@ -6,11 +6,13 @@ import Pictures from "@/components/Pictures/Pictures";
 import Price from "@/components/Price/Price";
 import Reviews from "@/components/Reviews/Reviews";
 import ServiceOrder from "@/components/ServiceOrder/ServiceOrder";
+import { YandexMetrika } from "@/components/YandexMetrika/YandexMetrika";
 import Contacts from "@/components/Сontacts/Сontacts";
 
 export default function Home() {
   return (
     <>
+      <YandexMetrika />
       <Header />
       <Intro />
       <About />
